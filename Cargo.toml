@@ -8,13 +8,15 @@ edition = "2021"
 [dependencies]
 actix = "0.13.0"
 actix-web = "4.2.1"
-actix-web-httpauth = "0.8.0"
-argonautica = "0.2.0"
 chrono = { version = "0.4.22", features = ["serde"] }
 dotenv = "0.15.0"
-hmac = "0.12.1"
-jwt = "0.16.0"
 serde = { version = "1.0.145", features = ["derive"] }
 serde_json = "1.0.86"
-sha2 = "0.10.6"
 sqlx = { version = "0.6.2", features = ["runtime-async-std-native-tls", "postgres", "chrono"] }
+
+# DEPENDENCIES SPECIFIC TO AUTH
+actix-web-httpauth = "0.8.0"
+argonautica = "0.2.0"
+hmac = "0.12.1"
+jwt = "0.16.0"
+sha2 = "0.10.6"
